@@ -2,7 +2,7 @@ import {Potion} from '../potion';
 
 export const RECOVERY_POTIONS: Potion[] = [
   {
-    name: 'Greater Healing Potion',
+    name: 'Greater Healing',
     ingredients: [
       'Bottled Water',
       'Pixie Dust',
@@ -15,9 +15,9 @@ export const RECOVERY_POTIONS: Potion[] = [
   },
   {
     name:
-      'Healing Potion',
+      'Healing',
     ingredients: [
-      'Lesser Healing Potion',
+      'Lesser Healing',
       'Glowing Mushroom'
     ],
     stations: [
@@ -26,7 +26,7 @@ export const RECOVERY_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Lesser Healing Potion',
+    name: 'Lesser Healing',
     ingredients: [
       'Bottle',
       'Gel',
@@ -37,19 +37,19 @@ export const RECOVERY_POTIONS: Potion[] = [
       'Alchemy Table'
     ]
   }, {
-    name: 'Lesser Restoration Potion',
+    name: 'Lesser Restoration',
     ingredients: [
-      'Lesser Healing Potion',
-      'Lesser Mana Potion'
+      'Lesser Healing',
+      'Lesser Mana'
     ],
     stations: [
       'Placed Bottle',
       'Alchemy Table'
     ]
   }, {
-    name: 'Mana Potion',
+    name: 'Mana',
     ingredients: [
-      'Lesser Mana Potion',
+      'Lesser Mana',
       'Glowing Mushroom'
     ],
     stations: [
@@ -57,7 +57,7 @@ export const RECOVERY_POTIONS: Potion[] = [
       'Alchemy Table'
     ]
   }, {
-    name: 'Restoration Potion',
+    name: 'Restoration',
     ingredients: [
       'Mushroom',
       'Pink Gel',
@@ -68,9 +68,9 @@ export const RECOVERY_POTIONS: Potion[] = [
       'Alchemy Table'
     ]
   }, {
-    name: 'Super Healing Potion',
+    name: 'Super Healing',
     ingredients: [
-      'Greater Healing Potion',
+      'Greater Healing',
       'Nebula Fragment',
       'Solar Fragment',
       'Stardust Fragment',
@@ -81,9 +81,9 @@ export const RECOVERY_POTIONS: Potion[] = [
       'Alchemy Table'
     ]
   }, {
-    name: 'Super Mana Potion',
+    name: 'Super Mana',
     ingredients: [
-      'Greater Mana Potion',
+      'Greater Mana',
       'Fallen Star',
       'Crystal Shard',
       'Unicorn Horn'

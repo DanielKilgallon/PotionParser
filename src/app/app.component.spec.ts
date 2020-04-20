@@ -19,7 +19,7 @@ describe('AppComponent', () => {
   it(`should have as title 'PotionParserV2'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('PotionParserV2');
+    expect(app.titleImg).toEqual('PotionParserV2');
   });
 
   it('should render title', () => {

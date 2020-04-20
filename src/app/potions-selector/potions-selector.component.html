@@ -1,0 +1,8 @@
+<h3>{{potionTitle}}</h3>
+<div class="potion-div unselectable" *ngFor="let potion of potions" (contextmenu)="decrementPotion($event, potion)"
+     (click)="incrementPotion($event, potion)">
+  <img src="../../assets/images/{{imageFolder}}/{{potion.name}}.png" alt="{{potion.name}} Image">
+  <span>&nbsp;</span>
+  <span class="selectable">{{potion.name}}</span>
+  <div class="float-right box" [textContent]="potionsCount[potion.name]"></div>
+</div>

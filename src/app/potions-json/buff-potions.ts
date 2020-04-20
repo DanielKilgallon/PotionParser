@@ -2,7 +2,7 @@ import {Potion} from '../potion';
 
 export const BUFF_POTIONS: Potion[] = [
   {
-    name: 'Ammo Reservation Potion',
+    name: 'Ammo Reservation',
     ingredients: [
       'Bottled Water',
       'Double Cod',
@@ -14,7 +14,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Archery Potion',
+    name: 'Archery',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -26,7 +26,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Battle Potion',
+    name: 'Battle',
     ingredients: [
       'Bottled Water',
       'Deathweed',
@@ -38,7 +38,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Calming Potion',
+    name: 'Calming',
     ingredients: [
       'Bottled Water',
       'Damselfish',
@@ -50,7 +50,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Crate Potion',
+    name: 'Crate',
     ingredients: [
       'Bottled Water',
       'Amber',
@@ -63,7 +63,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Dangersense Potion',
+    name: 'Dangersense',
     ingredients: [
       'Bottled Water',
       'Shiverthorn',
@@ -75,7 +75,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Endurance Potion',
+    name: 'Endurance',
     ingredients: [
       'Bottled Water',
       'Armored Cavefish',
@@ -87,7 +87,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Featherfall Potion',
+    name: 'Featherfall',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -100,7 +100,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Fishing Potion',
+    name: 'Fishing',
     ingredients: [
       'Bottled Water',
       'Crispy Honey Block',
@@ -112,7 +112,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Flipper Potion',
+    name: 'Flipper',
     ingredients: [
       'Bottled Water',
       'Shiverthorn',
@@ -124,7 +124,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Gills Potion',
+    name: 'Gills',
     ingredients: [
       'Bottled Water',
       'Waterleaf',
@@ -136,7 +136,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Gravitation Potion',
+    name: 'Gravitation',
     ingredients: [
       'Bottled Water',
       'Fireblossom',
@@ -150,7 +150,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Heartreach Potion',
+    name: 'Heartreach',
     ingredients: [
       'Bottled Water',
       'Crimson Tigerfish',
@@ -162,7 +162,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Hunter Potion',
+    name: 'Hunter',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -175,7 +175,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Inferno Potion',
+    name: 'Inferno',
     ingredients: [
       'Bottled Water',
       'Flarefin Koi',
@@ -188,7 +188,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Invisibility Potion',
+    name: 'Invisibility',
     ingredients: [
       'Bottled Water',
       'Blinkroot',
@@ -200,7 +200,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Ironskin Potion',
+    name: 'Ironskin',
     ingredients: [
       'Bottled Water',
       'Iron Ore',
@@ -212,7 +212,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Lifeforce Potion',
+    name: 'Lifeforce',
     ingredients: [
       'Bottled Water',
       'Prismite',
@@ -226,7 +226,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Love Potion',
+    name: 'Love',
     ingredients: [
       'Bottled Water',
       'Princess Fish',
@@ -238,7 +238,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Magic Power Potion',
+    name: 'Magic Power',
     ingredients: [
       'Bottled Water',
       'Moonglow',
@@ -251,7 +251,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Mana Regeneration Potion',
+    name: 'Mana Regeneration',
     ingredients: [
       'Bottled Water',
       'Moonglow',
@@ -264,7 +264,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Mining Potion',
+    name: 'Mining',
     ingredients: [
       'Bottled Water',
       'Antlion Mandible',
@@ -276,7 +276,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Night Owl Potion',
+    name: 'Night Owl',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -288,7 +288,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Obsidian Skin Potion',
+    name: 'Obsidian Skin',
     ingredients: [
       'Bottled Water',
       'Fireblossom',
@@ -301,7 +301,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Rage Potion',
+    name: 'Rage',
     ingredients: [
       'Bottled Water',
       'Hemopiranha',
@@ -313,7 +313,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Regeneration Potion',
+    name: 'Regeneration',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -325,7 +325,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Shine Potion',
+    name: 'Shine',
     ingredients: [
       'Bottled Water',
       'Daybloom',
@@ -337,7 +337,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Sonar Potion',
+    name: 'Sonar',
     ingredients: [
       'Bottled Water',
       'Waterleaf',
@@ -349,7 +349,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Spelunker Potion',
+    name: 'Spelunker',
     ingredients: [
       'Bottled Water',
       'Blinkroot',
@@ -362,7 +362,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Stink Potion',
+    name: 'Stink',
     ingredients: [
       'Bottled Water',
       'Stinkfish',
@@ -374,7 +374,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Summoning Potion',
+    name: 'Summoning',
     ingredients: [
       'Bottled Water',
       'Variegated Lardfish',
@@ -386,7 +386,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Swiftness Potion',
+    name: 'Swiftness',
     ingredients: [
       'Bottled Water',
       'Blinkroot',
@@ -398,7 +398,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Thorns Potion',
+    name: 'Thorns',
     ingredients: [
       'Bottled Water',
       'Deathweed',
@@ -412,7 +412,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Titan Potion',
+    name: 'Titan',
     ingredients: [
       'Bottled Water',
       'Bone',
@@ -425,7 +425,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Warmth Potion',
+    name: 'Warmth',
     ingredients: [
       'Bottled Water',
       'Frost Minnow',
@@ -437,7 +437,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Water Walking Potion',
+    name: 'Water Walking',
     ingredients: [
       'Bottled Water',
       'Waterleaf',
@@ -449,7 +449,7 @@ export const BUFF_POTIONS: Potion[] = [
     ]
   },
   {
-    name: 'Wrath Potion',
+    name: 'Wrath',
     ingredients: [
       'Bottled Water',
       'Ebonkoi',

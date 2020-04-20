@@ -1,5 +1,5 @@
 export interface Potion {
   name: string;
-  ingredients: object;
-  stations: object;
+  ingredients: string[];
+  stations: string[];
 }

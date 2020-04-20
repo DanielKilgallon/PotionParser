@@ -1,0 +1,32 @@
+.padding > * {
+  padding: 0 5px 0 5px;
+}
+
+.padding {
+  padding-bottom: 5px;
+}
+
+.box {
+  padding: 0 2px 0 2px;
+  width: 20px;
+  text-align: end;
+  -moz-box-shadow: 0 0 3px #000000;
+  -webkit-box-shadow: 0 0 3px #000000;
+  box-shadow: 0 0 3px #000000;
+}
+
+.potion-div:hover{
+  background: #72c9e3; /* make this whatever you want */
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.selectable {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}

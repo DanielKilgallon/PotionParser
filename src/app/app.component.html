@@ -1,3 +1,26 @@
-<div>This is test page and it load well. Good job my dude.</div>
-<app-recovery-potions></app-recovery-potions>
-<app-counter></app-counter>
+<div class="grow-and-shrink">
+  <img class="mx-auto d-block rotate" src="assets/images/logo.png" alt="Potion Parser Logo">
+</div>
+<div class="andy-font container">
+  <div class="row">
+    <div class="col bg-white rounded">
+      <div class="row">
+        <div class="col ">
+          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="recoveryPotions"
+                                [imageFolder]="recoveryFolderPath" [potionTitle]="recoveryTitle"></app-potions-selector>
+        </div>
+        <div class="col bg-white rounded">
+          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="buffPotions"
+                                [imageFolder]="buffFolderPath" [potionTitle]="buffTitle"></app-potions-selector>
+        </div>
+        <div class="col bg-white rounded">
+          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="otherPotions"
+                                [imageFolder]="otherFolderPath" [potionTitle]="otherTitle"></app-potions-selector>
+        </div>
+      </div>
+    </div>
+    <div class="col-3 bg-white rounded ingredients">
+      <app-ingredients [ingredients]="ingredients"></app-ingredients>
+    </div>
+  </div>
+</div>

@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face { font-family: andy; src: url('src/assets/fonts/Andy.otf') format("opentype"); }
+
+body {
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  overflow-x: hidden;
+}
+
+.andy-font {
+  font-family: andy, serif;
+  font-size: 24px;
+}

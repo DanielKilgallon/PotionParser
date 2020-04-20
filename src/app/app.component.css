@@ -1,0 +1,27 @@
+.logo {
+  text-align: center;
+}
+
+.ingredients {
+  margin-left: 50px;
+}
+
+/*animation for logo*/
+.rotate {
+  margin: 15px 0 5px 0;
+  animation: rotate 6s ease-in-out 0s infinite;
+}
+
+.grow-and-shrink {
+  animation: grow 6.1s linear 0s infinite;
+}
+
+@keyframes rotate {
+  25% {transform: rotate(7deg);}
+  75% {transform: rotate(-7deg);}
+}
+
+@keyframes grow {
+  0% {-webkit-transform: scale(1);}
+  50% {-webkit-transform: scale(1.2);}
+}
