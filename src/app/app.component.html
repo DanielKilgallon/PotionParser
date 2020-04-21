@@ -1,25 +1,30 @@
 <div class="grow-and-shrink">
   <img class="mx-auto d-block rotate" src="assets/images/logo.png" alt="Potion Parser Logo">
 </div>
-<div class="andy-font container">
+<div class="terraria-text container">
   <div class="row">
-    <div class="col bg-white rounded">
+    <div class="col terraria-menu rounded">
       <div class="row">
-        <div class="col ">
-          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="recoveryPotions"
-                                [imageFolder]="recoveryFolderPath" [potionTitle]="recoveryTitle"></app-potions-selector>
+        <div class="col terraria-submenu">
+          <app-potions-selector
+            (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+            [potions]="recoveryPotions" [imageFolder]="recoveryFolderPath"
+            [potionTitle]="recoveryTitle"></app-potions-selector>
         </div>
-        <div class="col bg-white rounded">
-          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="buffPotions"
-                                [imageFolder]="buffFolderPath" [potionTitle]="buffTitle"></app-potions-selector>
+        <div class="col terraria-submenu">
+          <app-potions-selector
+            (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+            [potions]="buffPotions" [imageFolder]="buffFolderPath" [potionTitle]="buffTitle"></app-potions-selector>
         </div>
-        <div class="col bg-white rounded">
-          <app-potions-selector (eventEmitter)="changeIngredientList($event)" [potions]="otherPotions"
-                                [imageFolder]="otherFolderPath" [potionTitle]="otherTitle"></app-potions-selector>
+        <div class="col terraria-submenu">
+          <app-potions-selector
+            (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+            [potions]="otherPotions" [imageFolder]="otherFolderPath" [potionTitle]="otherTitle"></app-potions-selector>
         </div>
       </div>
     </div>
-    <div class="col-3 bg-white rounded ingredients">
+    <div class="col-3 terraria-menu terraria-text rounded ingredients">
+      <button class="" (click)="clear()">clear</button>
       <app-ingredients [ingredients]="ingredients"></app-ingredients>
     </div>
   </div>

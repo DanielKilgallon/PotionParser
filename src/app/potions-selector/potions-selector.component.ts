@@ -17,25 +17,30 @@ export class PotionsSelectorComponent implements OnInit {
   potionTitle: string;
 
   @Output()
-  eventEmitter: EventEmitter<string> = new EventEmitter<string>();
+  addIngredientEmitter: EventEmitter<string> = new EventEmitter<string>();
+
+  @Output()
+  removeIngredientEmitter: EventEmitter<string> = new EventEmitter<string>();
 
   potionsCount: object[];
 
   constructor() {
-    this.potionsCount = [];
   }
 
   ngOnInit(): void {
     // initializes potion count to 0 for each
+    this.potionsCount = [];
     this.potions.forEach(potion => {
       this.potionsCount[potion.name] = 0;
     });
   }
 
   incrementPotion($event: MouseEvent, potion: Potion): void {
-    this.potionsCount[potion.name] = this.potionsCount[potion.name] + 1;
-    for (const ingredient of potion.ingredients) {
-      this.eventEmitter.emit(ingredient);
+    if (this.potionsCount[potion.name] < 99) {
+      this.potionsCount[potion.name] = this.potionsCount[potion.name] + 1;
+      for (const ingredient of potion.ingredients) {
+        this.addIngredientEmitter.emit(ingredient);
+      }
     }
   }
 
@@ -44,8 +49,15 @@ export class PotionsSelectorComponent implements OnInit {
     $event.preventDefault();
     if (this.potionsCount[potion.name] > 0) {
       this.potionsCount[potion.name] = this.potionsCount[potion.name] - 1;
+      for (const ingredient of potion.ingredients) {
+        this.removeIngredientEmitter.emit(ingredient);
+      }
     }
     // also stops contextMenu from opening
     return false;
+  }
+
+  changeCount() {
+    // figure out how to edit div value or something
   }
 }

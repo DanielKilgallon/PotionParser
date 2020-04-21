@@ -1,10 +1,7 @@
 <div>
   <h2>Ingredients</h2>
-  <button (click)="tally()">tally</button>
-  <button (click)="clear()">clear</button>
   <div *ngFor="let item of ingredientsGet() | keyvalue">
-    <img src="../../assets/images/Ingredients/{{item.key}}.png" alt="{{item.key}}"/>
-    <span>&nbsp;</span>
-    <span>{{item.value}}&nbsp;{{item.key}}</span>
+    <img class="ingredient-image" src="../../assets/images/Ingredients/{{item.key}}.png" alt="{{item.key}}"/>
+    <span>&nbsp;{{item.value}}&nbsp;{{item.key}}</span>
   </div>
 </div>

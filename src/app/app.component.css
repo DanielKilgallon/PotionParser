@@ -9,7 +9,7 @@
 /*animation for logo*/
 .rotate {
   margin: 15px 0 5px 0;
-  animation: rotate 6s ease-in-out 0s infinite;
+  animation: rotate 6s linear 0s infinite;
 }
 
 .grow-and-shrink {

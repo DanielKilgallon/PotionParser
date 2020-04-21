@@ -40,7 +40,18 @@ export class AppComponent {
     return 'url(\'' + path + '\')';
   }
 
-  changeIngredientList(ingredientFromPotionArray) {
-    this.ingredients.push(ingredientFromPotionArray);
+  addIngredient(ingredient) {
+    this.ingredients.push(ingredient);
+  }
+
+  removeIngredient(ingredient) {
+    const index = this.ingredients.findIndex(item => item === ingredient);
+    if (index > -1) {
+      this.ingredients.splice(index, 1);
+    }
+  }
+
+  clear() {
+    this.ingredients.splice(0, this.ingredients.length);
   }
 }
