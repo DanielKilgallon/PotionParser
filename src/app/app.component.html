@@ -3,28 +3,42 @@
 </div>
 <div class="terraria-text container">
   <div class="row">
-    <div class="col terraria-menu rounded">
+    <div class="col terraria-menu">
       <div class="row">
-        <div class="col terraria-submenu">
-          <app-potions-selector
-            (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
-            [potions]="recoveryPotions" [imageFolder]="recoveryFolderPath"
-            [potionTitle]="recoveryTitle"></app-potions-selector>
+        <div class="col">
+          <div class="row terraria-submenu">
+            <app-potions-selector
+              (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+              [potions]="recoveryPotions" [imageFolder]="recoveryFolderPath"
+              [potionTitle]="recoveryTitle"></app-potions-selector>
+          </div>
+          <div class="row terraria-submenu">
+            <app-potions-selector
+              (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+              [potions]="teleportationPotions" [imageFolder]="teleportationFolderPath"
+              [potionTitle]="teleportationTitle"></app-potions-selector>
+          </div>
+          <div class="row terraria-submenu">
+            <app-potions-selector
+              (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
+              [potions]="cosmeticPotions" [imageFolder]="cosmeticFolderPath"
+              [potionTitle]="cosmeticTitle"></app-potions-selector>
+          </div>
         </div>
         <div class="col terraria-submenu">
           <app-potions-selector
             (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
-            [potions]="buffPotions" [imageFolder]="buffFolderPath" [potionTitle]="buffTitle"></app-potions-selector>
+            [potions]="buffPotions1" [imageFolder]="buffFolderPath1" [potionTitle]="buffTitle1"></app-potions-selector>
         </div>
         <div class="col terraria-submenu">
           <app-potions-selector
             (removeIngredientEmitter)="removeIngredient($event)" (addIngredientEmitter)="addIngredient($event)"
-            [potions]="otherPotions" [imageFolder]="otherFolderPath" [potionTitle]="otherTitle"></app-potions-selector>
+            [potions]="buffPotions2" [imageFolder]="buffFolderPath2" [potionTitle]="buffTitle2"></app-potions-selector>
         </div>
+        <!--        <button class="terraria-button terraria-submenu" (click)="clear()">clear</button>-->
       </div>
     </div>
-    <div class="col-3 terraria-menu terraria-text rounded ingredients">
-      <button class="" (click)="clear()">clear</button>
+    <div class="col-3 terraria-menu ingredients">
       <app-ingredients [ingredients]="ingredients"></app-ingredients>
     </div>
   </div>

@@ -4,31 +4,33 @@ import { Observable, of } from 'rxjs';
 
 import { Potion } from './potion';
 import { RECOVERY_POTIONS } from './potions-json/recovery-potions';
-import { BUFF_POTIONS } from './potions-json/buff-potions';
-import { OTHER_POTIONS } from './potions-json/other-potions';
-import { INGREDIENTS } from './potions-json/ingredients';
-import { MessageService } from './message.service';
+import { BUFF_POTIONS1 } from './potions-json/buff-potions-1';
+import { BUFF_POTIONS2 } from './potions-json/buff-potions-2';
+import { TELEPORTATION_POTIONS } from './potions-json/teleportation-potions';
+import { COSMETIC_POTIONS } from './potions-json/cosmetic-potions';
 
 @Injectable({ providedIn: 'root' })
 export class PotionService {
 
-  constructor(private messageService: MessageService) { }
+  constructor() { }
 
   getRecoveryPotions(): Observable<Potion[]> {
-    // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('PotionService: fetched recovery potions');
     return of(RECOVERY_POTIONS);
   }
 
-  getBuffPotions(): Observable<Potion[]> {
-    // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('PotionService: fetched buff potions');
-    return of(BUFF_POTIONS);
+  getBuffPotions1(): Observable<Potion[]> {
+    return of(BUFF_POTIONS1);
   }
 
-  getOtherPotions(): Observable<Potion[]> {
-    // TODO: send the message _after_ fetching the heroes
-    this.messageService.add('PotionService: fetched other potions');
-    return of(OTHER_POTIONS);
+  getBuffPotions2(): Observable<Potion[]> {
+    return of(BUFF_POTIONS2);
+  }
+
+  getTeleportationPotions(): Observable<Potion[]> {
+    return of(TELEPORTATION_POTIONS);
+  }
+
+  getCosmeticPotions(): Observable<Potion[]> {
+    return of(COSMETIC_POTIONS);
   }
 }

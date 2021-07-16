@@ -1,23 +1,7 @@
 import {Potion} from '../potion';
 
-export const OTHER_POTIONS: Potion[] = [
+export const TELEPORTATION_POTIONS: Potion[] = [
   {
-    name: 'Gender Change',
-    ingredients: [
-      'Bottled Water',
-      'Daybloom',
-      'Moonglow',
-      'Blinkroot',
-      'Waterleaf',
-      'Deathweed',
-      'Shiverthorn',
-      'Fireblossom'
-    ],
-    stations: [
-      'Placed Bottle',
-      'Alchemy Table'
-    ]
-  }, {
     name:
       'Recall',
     ingredients: [

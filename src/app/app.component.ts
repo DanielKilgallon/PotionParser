@@ -3,23 +3,39 @@ import {Component} from '@angular/core';
 import {PotionService} from './potion.service';
 import {Potion} from './potion';
 
+interface PotionList {
+  name: string;
+  price: number;
+  description: string;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  products: PotionList[];
+
   recoveryPotions: Potion[];
   recoveryFolderPath = 'Recovery%20Potions';
   recoveryTitle = 'Recovery Potions';
 
-  buffPotions: Potion[];
-  buffFolderPath = 'Buff%20Potions';
-  buffTitle = 'Buff Potions';
+  teleportationPotions: Potion[];
+  teleportationFolderPath = 'Teleportation%20Potions';
+  teleportationTitle = 'Teleport Potions';
 
-  otherPotions: Potion[];
-  otherFolderPath = 'Other%20Potions';
-  otherTitle = 'Other Potions';
+  cosmeticPotions: Potion[];
+  cosmeticFolderPath = 'Cosmetic%20Potions';
+  cosmeticTitle = 'Cosmetic Potions';
+
+  buffPotions1: Potion[];
+  buffFolderPath1 = 'Buff%20Potions';
+  buffTitle1 = 'Buff Potions';
+
+  buffPotions2: Potion[];
+  buffFolderPath2 = 'Buff%20Potions';
+  buffTitle2 = 'Buff Potions';
 
   ingredients = [];
 
@@ -28,8 +44,10 @@ export class AppComponent {
 
     // sets up potion data sources
     this.potionService.getRecoveryPotions().subscribe(potions => this.recoveryPotions = potions);
-    this.potionService.getBuffPotions().subscribe(potions => this.buffPotions = potions);
-    this.potionService.getOtherPotions().subscribe(potions => this.otherPotions = potions);
+    this.potionService.getBuffPotions1().subscribe(potions => this.buffPotions1 = potions);
+    this.potionService.getBuffPotions2().subscribe(potions => this.buffPotions2 = potions);
+    this.potionService.getTeleportationPotions().subscribe(potions => this.teleportationPotions = potions);
+    this.potionService.getCosmeticPotions().subscribe(potions => this.cosmeticPotions = potions);
   }
 
   getBackground(): string {
@@ -52,6 +70,6 @@ export class AppComponent {
   }
 
   clear() {
-    this.ingredients.splice(0, this.ingredients.length);
+    window.location.reload();
   }
 }

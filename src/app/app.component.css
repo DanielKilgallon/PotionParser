@@ -4,12 +4,17 @@
 
 .ingredients {
   margin-left: 50px;
+  height: fit-content;
 }
 
 /*animation for logo*/
 .rotate {
-  margin: 15px 0 5px 0;
+  margin: 15px 0 5px 10px;
   animation: rotate 6s linear 0s infinite;
+}
+
+.add-margin {
+  margin: 10px 10px 10px 10px;
 }
 
 .grow-and-shrink {

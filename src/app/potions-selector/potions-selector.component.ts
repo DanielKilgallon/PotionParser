@@ -36,7 +36,9 @@ export class PotionsSelectorComponent implements OnInit {
   }
 
   incrementPotion($event: MouseEvent, potion: Potion): void {
-    if (this.potionsCount[potion.name] < 99) {
+    if ($event.ctrlKey) {
+      window.open( 'https://terraria.fandom.com/wiki/' + potion.name.replace(' ', '_') + '_Potion');
+    } else if (this.potionsCount[potion.name] < 99) {
       this.potionsCount[potion.name] = this.potionsCount[potion.name] + 1;
       for (const ingredient of potion.ingredients) {
         this.addIngredientEmitter.emit(ingredient);
@@ -58,6 +60,6 @@ export class PotionsSelectorComponent implements OnInit {
   }
 
   changeCount() {
-    // figure out how to edit div value or something
+    // figure out how to edit div value or something better
   }
 }
