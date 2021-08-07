@@ -1,4 +1,4 @@
-# This workflow will build and push a new container image to Amazon S3
+# This workflow will build and push the project to Amazon S3
 
 on:
   push:
@@ -28,7 +28,7 @@ jobs:
 
     - name: build project
       run: |
-        ng build --prod
+        ng build --configuration production
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -36,7 +36,10 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
-
-    - name: Copy files to the test website with the AWS CLI
+    - name: delete all files currently in s3 bucket
       run: |
-        aws s3 sync ./dist s3://potion-parser
+        aws s3 rm s3://potion-parser/ --recursive --include "*"
+
+    - name: Copy files to the S3 bucket with the AWS CLI
+      run: |
+        aws s3 sync ./dist s3://potion-parser --acl public-read

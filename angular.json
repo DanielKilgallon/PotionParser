@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PotionParserV2": {
+    "PotionParser": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/PotionParserV2",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "PotionParserV2:build"
+            "browserTarget": "PotionParser:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "PotionParserV2:build:production"
+              "browserTarget": "PotionParser:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PotionParserV2:build"
+            "browserTarget": "PotionParser:build"
           }
         },
         "test": {
@@ -119,16 +119,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "PotionParserV2:serve"
+            "devServerTarget": "PotionParser:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "PotionParserV2:serve:production"
+              "devServerTarget": "PotionParser:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "PotionParserV2"
+  "defaultProject": "PotionParser"
 }

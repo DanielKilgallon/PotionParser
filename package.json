@@ -1,5 +1,5 @@
 {
-  "name": "potion-parser-v2",
+  "name": "potion-parser",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
