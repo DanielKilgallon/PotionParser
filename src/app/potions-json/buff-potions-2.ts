@@ -2,6 +2,45 @@ import {Potion} from '../potion';
 
 export const BUFF_POTIONS2: Potion[] = [
   {
+    name: 'Lesser Luck',
+    ingredients: [
+      'Bottled Water',
+      'Waterleaf',
+      'Ladybug',
+      'White Pearl'
+    ],
+    stations: [
+      'Placed Bottle',
+      'Alchemy Table'
+    ]
+  },
+  {
+    name: 'Luck',
+    ingredients: [
+      'Bottled Water',
+      'Waterleaf',
+      'Ladybug',
+      'Black Pearl'
+    ],
+    stations: [
+      'Placed Bottle',
+      'Alchemy Table'
+    ]
+  },
+  {
+    name: 'Greater Luck',
+    ingredients: [
+      'Bottled Water',
+      'Waterleaf',
+      'Ladybug',
+      'Pink Pearl'
+    ],
+    stations: [
+      'Placed Bottle',
+      'Alchemy Table'
+    ]
+  },
+  {
     name: 'Magic Power',
     ingredients: [
       'Bottled Water',

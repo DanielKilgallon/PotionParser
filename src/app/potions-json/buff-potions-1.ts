@@ -38,6 +38,19 @@ export const BUFF_POTIONS1: Potion[] = [
     ]
   },
   {
+    name: 'Builder',
+    ingredients: [
+      'Bottled Water',
+      'Blinkroot',
+      'Shiverthorn',
+      'Moonglow'
+    ],
+    stations: [
+      'Placed Bottle',
+      'Alchemy Table'
+    ]
+  },
+  {
     name: 'Calming',
     ingredients: [
       'Bottled Water',

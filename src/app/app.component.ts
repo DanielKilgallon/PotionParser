@@ -68,8 +68,4 @@ export class AppComponent {
       this.ingredients.splice(index, 1);
     }
   }
-
-  clear() {
-    window.location.reload();
-  }
 }

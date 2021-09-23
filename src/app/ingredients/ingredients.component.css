@@ -1,4 +1,7 @@
 .ingredient-image {
-  height: 26px;
-  width:20px;
+  width: 22px;
+  max-height: 36px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }

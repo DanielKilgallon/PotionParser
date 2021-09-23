@@ -37,5 +37,17 @@ export const TELEPORTATION_POTIONS: Potion[] = [
       'Placed Bottle',
       'Alchemy Table'
     ]
+  },
+  {
+    name:
+      'Potion of Return',
+    ingredients: [
+      'Recall Potion',
+      'Obsidifish'
+    ],
+    stations: [
+      'Placed Bottle',
+      'Alchemy Table'
+    ]
   }
 ];

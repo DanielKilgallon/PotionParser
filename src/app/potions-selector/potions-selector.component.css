@@ -8,6 +8,9 @@
 
 .potion-image {
   padding: 0 0 2px 2px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
 }
 
 .potion-div:hover{
