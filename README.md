@@ -4,7 +4,7 @@ A website to calculate potion ingredients needed to make potions in the video ga
 
 ## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `npm install` once to install dependencies, then run `ng serve` to create a dev server. Navigate to `http://localhost:4200/` to view. The app will automatically reload if you change any of the source files.
 
 ## Build
 
