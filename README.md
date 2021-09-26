@@ -8,7 +8,7 @@ Run `npm install` once to install dependencies, then run `ng serve` to create a 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--configuration production` flag for a production build.
+Run `ng build` with the `--configuration production` flag to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Deploy
 
