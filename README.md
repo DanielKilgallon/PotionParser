@@ -1,5 +1,7 @@
 # Potion Parser
 
+[![Website Status](https://img.shields.io/uptimerobot/status/m789298462-05f2d703b4fb8003469589dc?style=flat)](https://uptimerobot.com/dashboard.php#789298462)
+
 A website to calculate potion ingredients needed to make potions in the video game [Terraria](https://www.terraria.org/). This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7. This project can be viewed live [here](http://potion-parser.s3-website-us-east-1.amazonaws.com/).
 
 ## Development
