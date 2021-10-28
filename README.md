@@ -16,7 +16,7 @@ Run `ng build` with the `--configuration production` flag to build the project. 
 
 Make sure to build the project first before deploying. Run `aws s3 rm s3://potion-parser/ --recursive --include "*"` first to wipe the S3 bucket, then run `aws s3 sync ./dist s3://potion-parser --acl public-read` to upload the files to the S3 bucket.
 
-## Further help
+## Further Help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
