@@ -5,10 +5,15 @@
 .ingredients {
   margin-left: 50px;
   height: fit-content;
+  padding-top: 0;
 }
 
 .spacing {
   width: 10px;
+}
+
+.t-cell {
+  margin-bottom: 10px;
 }
 
 /*animation for logo*/
