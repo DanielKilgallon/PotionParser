@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: andy;
+    src: url('src/assets/fonts/Andy.otf') format("opentype");
+  }
+  
+  body {
+    background: no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow-x: hidden;
+  }
+  
+  .terraria-text {
+    color: white;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    font-family: andy, serif;
+    font-size: 24px;
+    margin-left: auto;
+  }
+  
+  .terraria-menu {
+    border-radius: 1rem !important;
+    background-color: rgba(65, 77, 114, 0.90);
+    border: 1px solid black;
+  }
+  
+  .terraria-submenu {
+    text-align: left;
+    border-radius: 1rem !important;
+    background-color: rgba(85, 111, 205, 0.50);
+    border: 1px solid rgba(105, 133, 238, 1);
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom:10px;
+  }
+  
+  .terraria-heading {
+    font-weight: bold;
+    bottom: 9px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 1rem ! important;
+    background-color: rgba(85, 111, 205, 0.90);
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 990px) {
+    .ingredients {
+      margin: 0 !important;
+      font-size: 14px;
+    }
+  
+    .terraria-text {
+      font-size: 20px;
+    }
+  
+    h2, h3 {
+      font-size: 14px !important;
+    }
+  
+    .potion-image {
+      width: 10px;
+    }
+  }
+  
