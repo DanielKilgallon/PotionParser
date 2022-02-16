@@ -1,0 +1,31 @@
+.potion-count {
+  padding: 0 2px 0 2px;
+  height: 30px;
+  width: 25px;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+
+.potion-image {
+  padding: 0 0 2px 2px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+.potion-div:hover{
+  background: #6c9fad; /* make this whatever you want */
+  border-radius: 0.2rem;
+}
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.selectable {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
