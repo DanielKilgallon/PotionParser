@@ -1,7 +1,7 @@
-<h3 class="terraria-heading text-center">{{potionTitle}}</h3>
+<h3 class="terraria-heading d-flex justify-content-center">{{potionTitle}}</h3>
 <div class="potion-div unselectable" *ngFor="let potion of potions" (contextmenu)="decrementPotion($event, potion)"
   (click)="incrementPotion($event, potion)">
   <img class="potion-image" src="../../assets/images/{{imageFolder}}/{{potion.name}}.png" alt="{{potion.name}} Image">
   <span>&nbsp;{{potion.name}}</span>
-  <span class="float-right potion-count" (click)="changeCount()" [textContent]="potionsCount.get(potion.name)"></span>
+  <span class="d-flex align-self-start potion-count" (click)="changeCount()" [textContent]="potionsCount.get(potion.name)"></span>
 </div>
