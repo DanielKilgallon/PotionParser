@@ -1,5 +1,5 @@
-<h2 class="text-center">Ingredients</h2>
+<h2 class="terraria-heading d-flex justify-content-center">Ingredients</h2>
 <div class="ingredient-list" *ngFor="let item of ingredientsGet() | keyvalue">
-  <img class="ingredient-image" src="../../assets/images/Ingredients/{{item.key}}.png" alt="{{item.key}}"/>
+  <img class="ingredient-image unselectable" src="../../assets/images/Ingredients/{{item.key}}.png" alt="{{item.key}}"/>
   <span>&nbsp;{{item.value}}&nbsp;{{item.key}}</span>
 </div>

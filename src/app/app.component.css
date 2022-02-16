@@ -5,6 +5,7 @@
 .ingredients {
   margin-left: 50px;
   height: fit-content;
+  padding-top: 0;
 }
 
 .spacing {
